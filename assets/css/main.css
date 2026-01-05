@@ -2694,4 +2694,33 @@ section,
     flex: 1;
     min-width: 0;
   }
+
+  /* Стили для мобильного популярного блока */
+  .pricing-popular-mobile {
+    margin-bottom: 1rem;
+  }
+
+  .pricing-popular-mobile .pricing-item {
+    background: linear-gradient(135deg, rgba(39, 167, 118, 0.1), rgba(39, 167, 118, 0.05));
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 8px 25px rgba(39, 167, 118, 0.2);
+  }
+
+  .pricing-popular-mobile .pricing-badge {
+    background: var(--accent-color);
+    color: white;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    font-weight: 600;
+  }
+
+  .pricing-popular-mobile .pricing-title {
+    color: var(--accent-color);
+    font-weight: 700;
+  }
+
+  .pricing-popular-mobile .pricing-price {
+    color: var(--accent-color);
+    font-weight: 800;
+  }
 }
