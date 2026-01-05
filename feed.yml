@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <yml_catalog date="2025-01-05 12:00:00">
   <shop version="2.0">
-    <name>irinasketch — Эскизы на заказ</name>
+    <name>irinasketch - Tattoo Sketches</name>
     <company>Ирина Сидельникова</company>
     <url>https://irina-sketch.ru/</url>
     <email>maafik@66.ru</email>
@@ -12,11 +12,11 @@
     </currencies>
     
     <categories>
-      <category id="1">Тату эскизы</category>
-      <category id="2">Геометрический стиль</category>
-      <category id="3">Кибер-готика</category>
-      <category id="4">Абстрактный стиль</category>
-      <category id="5">Реализм</category>
+      <category id="1">Tattoo Sketches</category>
+      <category id="2">Geometric Style</category>
+      <category id="3">Cyber Gothic</category>
+      <category id="4">Abstract Style</category>
+      <category id="5">Realism</category>
     </categories>
     
     <offers>
@@ -28,7 +28,7 @@
           <currency>RUR</currency>
         </price>
         <categoryId>2</categoryId>
-        <name>Геометрический нео-брутализм</name>
+        <name>Geometric Neo Brutalism</name>
         <description>Голова волка, выполненная с использованием чётких геометрических форм и резких линий, подчёркивающих дикость образа. Уникальный дизайн в стиле нео-брутализм.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-1.jpg</picture>
         <delivery>true</delivery>
@@ -48,7 +48,7 @@
           <currency>RUR</currency>
         </price>
         <categoryId>3</categoryId>
-        <name>Кибер-готика</name>
+        <name>Cyber Gothic</name>
         <description>Футуристичный ворон с технологичными элементами и контрастным светом, создающий мрачный и загадочный образ. Современный киберпанк стиль.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-2.jpg</picture>
         <delivery>true</delivery>
@@ -68,7 +68,7 @@
           <currency>RUR</currency>
         </price>
         <categoryId>4</categoryId>
-        <name>Абстрактный дарк-сюрреализм</name>
+        <name>Abstract Dark Surrealism</name>
         <description>Абстрактный череп с контрастными мазками и мрачной атмосферой, символизирующий жизнь и разрушение. Оригинальный дарк-сюрреалистический дизайн.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-3.jpg</picture>
         <delivery>true</delivery>
@@ -88,7 +88,7 @@
           <currency>RUR</currency>
         </price>
         <categoryId>5</categoryId>
-        <name>Экспрессивный анимализм</name>
+        <name>Expressive Animalism</name>
         <description>Динамичный образ медведя с резкими линиями и тёмными акцентами, передающий ярость и мощь. Сильный анималистический дизайн в экспрессивной манере.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-4.jpg</picture>
         <delivery>true</delivery>
@@ -108,7 +108,7 @@
           <currency>RUR</currency>
         </price>
         <categoryId>5</categoryId>
-        <name>Хищный реализм</name>
+        <name>Predatory Realism</name>
         <description>Реалистичный образ волка с акцентом на взгляд и оскал, передающий силу, агрессию и первобытный инстинкт. Высокая детализация в реалистичном стиле.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-5.jpg</picture>
         <delivery>true</delivery>
