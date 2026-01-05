@@ -4,9 +4,6 @@ Allow: /
 # Sitemap
 Sitemap: https://irina-sketch.ru/sitemap.xml
 
-# YML Feed for Yandex Services
-Sitemap: https://irina-sketch.ru/feed.yml
-
 # Popular search engines
 User-agent: Yandex
 Allow: /
