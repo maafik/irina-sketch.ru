@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <yml_catalog date="2025-01-05 12:00:00">
-  <shop version="2.0">
-    <name>irinasketch</name>
+  <shop>
+    <name>irinasketch — Эскизы на заказ</name>
     <company>Ирина Сидельникова</company>
     <url>https://irina-sketch.ru/</url>
     <email>maafik@66.ru</email>
@@ -12,23 +12,21 @@
     </currencies>
     
     <categories>
-      <category id="1">Tattoo Sketches</category>
-      <category id="2">Geometric Style</category>
-      <category id="3">Cyber Gothic</category>
-      <category id="4">Abstract Style</category>
-      <category id="5">Realism</category>
+      <category id="1">Тату эскизы</category>
+      <category id="2">Геометрический стиль</category>
+      <category id="3">Кибер-готика</category>
+      <category id="4">Абстрактный стиль</category>
+      <category id="5">Реализм</category>
     </categories>
     
     <offers>
       <!-- Геометрический нео-брутализм -->
-      <offer id="1">
+      <offer id="1" available="true">
         <url>https://irina-sketch.ru/#gallery-4</url>
-        <price>
-          <value>5000</value>
-          <currency>RUR</currency>
-        </price>
+        <price>5000</price>
+        <currencyId>RUR</currencyId>
         <categoryId>2</categoryId>
-        <name>Geometric Neo Brutalism</name>
+        <name>Геометрический нео-брутализм</name>
         <description>Голова волка, выполненная с использованием чётких геометрических форм и резких линий, подчёркивающих дикость образа. Уникальный дизайн в стиле нео-брутализм.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-1.jpg</picture>
         <delivery>true</delivery>
@@ -41,14 +39,12 @@
       </offer>
       
       <!-- Кибер-готика -->
-      <offer id="2">
+      <offer id="2" available="true">
         <url>https://irina-sketch.ru/#gallery-4</url>
-        <price>
-          <value>6000</value>
-          <currency>RUR</currency>
-        </price>
+        <price>6000</price>
+        <currencyId>RUR</currencyId>
         <categoryId>3</categoryId>
-        <name>Cyber Gothic</name>
+        <name>Кибер-готика</name>
         <description>Футуристичный ворон с технологичными элементами и контрастным светом, создающий мрачный и загадочный образ. Современный киберпанк стиль.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-2.jpg</picture>
         <delivery>true</delivery>
@@ -61,14 +57,12 @@
       </offer>
       
       <!-- Абстрактный дарк-сюрреализм -->
-      <offer id="3">
+      <offer id="3" available="true">
         <url>https://irina-sketch.ru/#gallery-4</url>
-        <price>
-          <value>5500</value>
-          <currency>RUR</currency>
-        </price>
+        <price>5500</price>
+        <currencyId>RUR</currencyId>
         <categoryId>4</categoryId>
-        <name>Abstract Dark Surrealism</name>
+        <name>Абстрактный дарк-сюрреализм</name>
         <description>Абстрактный череп с контрастными мазками и мрачной атмосферой, символизирующий жизнь и разрушение. Оригинальный дарк-сюрреалистический дизайн.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-3.jpg</picture>
         <delivery>true</delivery>
@@ -81,14 +75,12 @@
       </offer>
       
       <!-- Экспрессивный анимализм -->
-      <offer id="4">
+      <offer id="4" available="true">
         <url>https://irina-sketch.ru/#gallery-4</url>
-        <price>
-          <value>7000</value>
-          <currency>RUR</currency>
-        </price>
+        <price>7000</price>
+        <currencyId>RUR</currencyId>
         <categoryId>5</categoryId>
-        <name>Expressive Animalism</name>
+        <name>Экспрессивный анимализм</name>
         <description>Динамичный образ медведя с резкими линиями и тёмными акцентами, передающий ярость и мощь. Сильный анималистический дизайн в экспрессивной манере.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-4.jpg</picture>
         <delivery>true</delivery>
@@ -101,14 +93,12 @@
       </offer>
       
       <!-- Хищный реализм -->
-      <offer id="5">
+      <offer id="5" available="true">
         <url>https://irina-sketch.ru/#gallery-4</url>
-        <price>
-          <value>8000</value>
-          <currency>RUR</currency>
-        </price>
+        <price>8000</price>
+        <currencyId>RUR</currencyId>
         <categoryId>5</categoryId>
-        <name>Predatory Realism</name>
+        <name>Хищный реализм</name>
         <description>Реалистичный образ волка с акцентом на взгляд и оскал, передающий силу, агрессию и первобытный инстинкт. Высокая детализация в реалистичном стиле.</description>
         <picture>https://irinasketch.ru/assets/img/gallery/gallery-5.jpg</picture>
         <delivery>true</delivery>
