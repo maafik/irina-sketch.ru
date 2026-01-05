@@ -68,6 +68,7 @@
 
       <div class="header-social-links">
         <a href="https://t.me/Irinasketchs?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7." class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="whatsapp" onclick="openWhatsAppModal(); return false;"><i class="bi bi-whatsapp"></i></a>
         <a href="mailto:maafik@66.ru" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
 
@@ -221,6 +222,54 @@
         </div>
       </div>
     </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing-section">
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
+        <div class="section-title text-center">
+          <h2>Цены</h2>
+          <p>Стоимость эскизов под разные задачи</p>
+        </div>
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-item" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="pricing-title">Минимализм</h3>
+              <div>
+                <div class="pricing-price">от 2 500 ₽</div>
+                <p class="pricing-desc">Простые формы, чёрно-белая графика, небольшие тату</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-item pricing-popular" data-aos="fade-up" data-aos-delay="150">
+              <span class="pricing-badge">Популярный</span>
+              <h3 class="pricing-title">Стандарт</h3>
+              <div>
+                <div class="pricing-price">от 5 000 ₽</div>
+                <p class="pricing-desc">Детализированная работа, сложные композиции, средние тату</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-item" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="pricing-title">Портрет/Реализм</h3>
+              <div>
+                <div class="pricing-price">от 8 000 ₽</div>
+                <p class="pricing-desc">Фотореалистичные детали, портреты, большие и сложные работы</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-note text-center" data-aos="fade-up" data-aos-delay="250">
+          <p><strong>Не знаешь, что выбрать?</strong> <a href="#order" class="order-trigger" style="color: var(--accent-color); text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;">Напиши мне</a> — помогу определить стиль и бюджет под твою идею</p>
+        </div>
+      </div>
+    </section>
+
     <section id="gallery-4" class="section mfb-gallery">
 
       <div class="mfb-gallery__bg" aria-hidden="true">
@@ -308,6 +357,7 @@
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href="https://t.me/Irinasketchs?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7."><i class="bi bi-facebook"></i></a>
+        <a href="#" class="whatsapp" onclick="openWhatsAppModal(); return false;"><i class="bi bi-whatsapp"></i></a>
         <a href="mailto:maafik@66.ru"><i class="bi bi-instagram"></i></a>
       </div>
       <div class="credits">
@@ -379,6 +429,26 @@
     </div>
   </div>
 
+  <!-- WhatsApp Modal -->
+  <div class="order-modal" id="whatsappModal" style="display: none;">
+    <div class="order-modal__dialog">
+      <button class="order-modal__close" type="button" aria-label="Закрыть" onclick="closeWhatsAppModal()">✕</button>
+      <div class="order-modal__title">Написать в WhatsApp</div>
+      <div class="order-modal__text">
+        Для работы WhatsApp в России нужно включить VPN. Если у вас нет VPN, лучше воспользуйтесь Telegram.
+      </div>
+      <div class="order-modal__actions">
+        <a class="order-modal__btn order-modal__btn--wa" href="https://wa.me/79517623467?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7." target="_blank" rel="noopener">
+          <span class="order-modal__btn-content">
+            <span class="order-modal__btn-main">WhatsApp</span>
+            <span class="order-modal__btn-sub">работает с VPN</span>
+          </span>
+        </a>
+        <a class="order-modal__btn order-modal__btn--tg" href="https://t.me/Irinasketchs?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7." target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+    </div>
+  </div>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -404,6 +474,25 @@
 
   <!-- Tracking scripts - loaded after page load for better performance -->
   <script>
+    // WhatsApp Modal functions
+    function openWhatsAppModal() {
+      document.getElementById('whatsappModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeWhatsAppModal() {
+      document.getElementById('whatsappModal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    
+    // Close modal when clicking outside
+    document.addEventListener('click', function(event) {
+      const whatsappModal = document.getElementById('whatsappModal');
+      if (event.target === whatsappModal) {
+        closeWhatsAppModal();
+      }
+    });
+
     window.addEventListener('load', function() {
       setTimeout(function() {
         // Загружаем изображение с задержкой 1 секунду

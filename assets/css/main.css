@@ -2519,3 +2519,179 @@ section,
     width: 100%;
   }
 }
+
+/*--------------------------------------------------------------
+# Pricing Section - Typography Only
+--------------------------------------------------------------*/
+.pricing-section {
+  padding: 80px 0;
+  background: var(--background-color);
+}
+
+.pricing-item {
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  right: 50%;
+  transform: translateX(50%);
+  background: var(--accent-color);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pricing-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
+}
+
+.pricing-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.pricing-desc {
+  color: var(--default-color);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  text-align: left;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-list li {
+  padding: 0.6rem 0;
+  color: var(--default-color);
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-list li:last-child {
+  border-bottom: none;
+}
+
+.pricing-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.pricing-note {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: rgba(39, 167, 118, 0.08);
+  border: 1px solid rgba(39, 167, 118, 0.15);
+  border-radius: 12px;
+  color: var(--default-color);
+}
+
+.pricing-note p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 60px 0;
+  }
+  
+  .pricing-price {
+    font-size: 2rem;
+  }
+  
+  .pricing-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-section .row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .pricing-section .col-lg-4 {
+    max-width: 100%;
+    flex: 1;
+  }
+  
+  .pricing-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    gap: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+  .pricing-badge {
+    position: static;
+    transform: none;
+    margin-bottom: 0;
+    font-size: 0.6rem;
+    padding: 3px 8px;
+    align-self: flex-start;
+  }
+  
+  .pricing-item > div:not(.pricing-badge) {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .pricing-title {
+    font-size: 1rem;
+    margin-bottom: 0;
+    min-width: 80px;
+    flex-shrink: 0;
+  }
+  
+  .pricing-price {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    min-width: 70px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .pricing-desc {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    opacity: 0.9;
+    line-height: 1.3;
+    flex: 1;
+    min-width: 0;
+  }
+}
