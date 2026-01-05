@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2025-01-05 12:00:00">
+  <shop>
+    <name>irinasketch — Эскизы на заказ</name>
+    <company>Ирина Сидельникова</company>
+    <url>https://irina-sketch.ru/</url>
+    <email>maafik@66.ru</email>
+    <phone>+79517623467</phone>
+    
+    <currencies>
+      <currency id="RUR" rate="1"/>
+    </currencies>
+    
+    <categories>
+      <category id="1">Тату эскизы</category>
+      <category id="2">Геометрический стиль</category>
+      <category id="3">Кибер-готика</category>
+      <category id="4">Абстрактный стиль</category>
+      <category id="5">Реализм</category>
+    </categories>
+    
+    <offers>
+      <!-- Геометрический нео-брутализм -->
+      <offer id="1" available="true">
+        <url>https://irina-sketch.ru/#gallery-4</url>
+        <price>5000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <name>Геометрический нео-брутализм</name>
+        <description>Голова волка, выполненная с использованием чётких геометрических форм и резких линий, подчёркивающих дикость образа. Уникальный дизайн в стиле нео-брутализм.</description>
+        <picture>https://irinasketch.ru/assets/img/gallery/gallery-1.jpg</picture>
+        <delivery>true</delivery>
+        <pickup>false</pickup>
+        <store>false</store>
+        <param name="Стиль">Геометрический нео-брутализм</param>
+        <param name="Размер">До 15х15 см</param>
+        <param name="Срок выполнения">2-3 дня</param>
+        <param name="Правки">3 бесплатно</param>
+      </offer>
+      
+      <!-- Кибер-готика -->
+      <offer id="2" available="true">
+        <url>https://irina-sketch.ru/#gallery-4</url>
+        <price>6000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <name>Кибер-готика</name>
+        <description>Футуристичный ворон с технологичными элементами и контрастным светом, создающий мрачный и загадочный образ. Современный киберпанк стиль.</description>
+        <picture>https://irinasketch.ru/assets/img/gallery/gallery-2.jpg</picture>
+        <delivery>true</delivery>
+        <pickup>false</pickup>
+        <store>false</store>
+        <param name="Стиль">Кибер-готика</param>
+        <param name="Размер">До 20х20 см</param>
+        <param name="Срок выполнения">3-4 дня</param>
+        <param name="Правки">3 бесплатно</param>
+      </offer>
+      
+      <!-- Абстрактный дарк-сюрреализм -->
+      <offer id="3" available="true">
+        <url>https://irina-sketch.ru/#gallery-4</url>
+        <price>5500</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <name>Абстрактный дарк-сюрреализм</name>
+        <description>Абстрактный череп с контрастными мазками и мрачной атмосферой, символизирующий жизнь и разрушение. Оригинальный дарк-сюрреалистический дизайн.</description>
+        <picture>https://irinasketch.ru/assets/img/gallery/gallery-3.jpg</picture>
+        <delivery>true</delivery>
+        <pickup>false</pickup>
+        <store>false</store>
+        <param name="Стиль">Абстрактный дарк-сюрреализм</param>
+        <param name="Размер">До 15х15 см</param>
+        <param name="Срок выполнения">2-3 дня</param>
+        <param name="Правки">3 бесплатно</param>
+      </offer>
+      
+      <!-- Экспрессивный анимализм -->
+      <offer id="4" available="true">
+        <url>https://irina-sketch.ru/#gallery-4</url>
+        <price>7000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <name>Экспрессивный анимализм</name>
+        <description>Динамичный образ медведя с резкими линиями и тёмными акцентами, передающий ярость и мощь. Сильный анималистический дизайн в экспрессивной манере.</description>
+        <picture>https://irinasketch.ru/assets/img/gallery/gallery-4.jpg</picture>
+        <delivery>true</delivery>
+        <pickup>false</pickup>
+        <store>false</store>
+        <param name="Стиль">Экспрессивный анимализм</param>
+        <param name="Размер">До 20х20 см</param>
+        <param name="Срок выполнения">3-4 дня</param>
+        <param name="Правки">3 бесплатно</param>
+      </offer>
+      
+      <!-- Хищный реализм -->
+      <offer id="5" available="true">
+        <url>https://irina-sketch.ru/#gallery-4</url>
+        <price>8000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <name>Хищный реализм</name>
+        <description>Реалистичный образ волка с акцентом на взгляд и оскал, передающий силу, агрессию и первобытный инстинкт. Высокая детализация в реалистичном стиле.</description>
+        <picture>https://irinasketch.ru/assets/img/gallery/gallery-5.jpg</picture>
+        <delivery>true</delivery>
+        <pickup>false</pickup>
+        <store>false</store>
+        <param name="Стиль">Хищный реализм</param>
+        <param name="Размер">До 20х20 см</param>
+        <param name="Срок выполнения">4-5 дней</param>
+        <param name="Правки">4 бесплатно</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
