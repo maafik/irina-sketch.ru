@@ -73,8 +73,8 @@
       </nav>
 
       <div class="header-social-links">
-        <a href="https://t.me/Irinasketchs?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7." class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="whatsapp" onclick="openWhatsAppModal(); return false;"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="facebook" onclick="showMessengerConfirmation('telegram'); return false;"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="whatsapp" onclick="showMessengerConfirmation('whatsapp'); return false;"><i class="bi bi-whatsapp"></i></a>
         <a href="mailto:maafik@66.ru" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
 
@@ -162,8 +162,8 @@
         <p>© <span>Сидельникова И.А</span> <strong class="px-1 sitename">irina-sketch</strong> <span> Все права защищены</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://t.me/Irinasketchs?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7."><i class="bi bi-facebook"></i></a>
-        <a href="#" class="whatsapp" onclick="openWhatsAppModal(); return false;"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" onclick="showMessengerConfirmation('telegram'); return false;"><i class="bi bi-facebook"></i></a>
+        <a href="#" onclick="showMessengerConfirmation('whatsapp'); return false;"><i class="bi bi-whatsapp"></i></a>
         <a href="mailto:maafik@66.ru"><i class="bi bi-instagram"></i></a>
       </div>
       <div class="credits">
@@ -197,6 +197,27 @@
     </div>
   </div>
 
+  <!-- Messenger Confirmation Modal -->
+  <div class="order-modal" id="messengerConfirmationModal" style="display: none;">
+    <div class="order-modal__dialog">
+      <button class="order-modal__close" type="button" aria-label="Закрыть" onclick="closeMessengerConfirmation()">✕</button>
+      <div class="order-modal__title">Подтверждение перехода</div>
+      <div class="order-modal__text">
+        Вы действительно хотите перейти в мессенджер для заказа эскиза? Я отвечу на ваше сообщение в течение часа.
+      </div>
+      <div class="order-modal__actions">
+        <a class="order-modal__btn order-modal__btn--tg" id="confirmTelegramBtn" href="#" target="_blank" rel="noopener">Да, перейти в Telegram</a>
+        <a class="order-modal__btn order-modal__btn--wa" id="confirmWhatsAppBtn" href="#" target="_blank" rel="noopener" style="display: none;">
+          <span class="order-modal__btn-content">
+            <span class="order-modal__btn-main">Да, перейти в WhatsApp</span>
+            <span class="order-modal__btn-sub">нужен VPN</span>
+          </span>
+        </a>
+        <button class="order-modal__btn" onclick="closeMessengerConfirmation()" style="background: #666; text-decoration: none;">Отмена</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -220,8 +241,69 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js?v=2.0" defer></script>
 
-  <!-- WhatsApp Modal functions -->
+  <!-- Messenger Confirmation Modal functions -->
   <script>
+    // Messenger Confirmation Modal functions
+    function showMessengerConfirmation(messenger) {
+      const modal = document.getElementById('messengerConfirmationModal');
+      const telegramBtn = document.getElementById('confirmTelegramBtn');
+      const whatsappBtn = document.getElementById('confirmWhatsAppBtn');
+      
+      // Сбрасываем видимость кнопок
+      telegramBtn.style.display = 'none';
+      whatsappBtn.style.display = 'none';
+      
+      if (messenger === 'telegram') {
+        telegramBtn.href = 'https://t.me/Irinasketchs?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7.';
+        telegramBtn.style.display = 'block';
+        
+        // Отправляем событие в Яндекс Метрику для качественной конверсии
+        if (typeof ym !== 'undefined') {
+          ym(106117894, 'reachGoal', 'MESSENGER_CONFIRMATION_SHOW');
+        }
+      } else if (messenger === 'whatsapp') {
+        whatsappBtn.href = 'https://wa.me/79517623467?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7.';
+        whatsappBtn.style.display = 'block';
+        
+        // Отправляем событие в Яндекс Метрику для качественной конверсии
+        if (typeof ym !== 'undefined') {
+          ym(106117894, 'reachGoal', 'MESSENGER_CONFIRMATION_SHOW');
+        }
+      }
+      
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMessengerConfirmation() {
+      const modal = document.getElementById('messengerConfirmationModal');
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    
+    // Отслеживаем подтвержденный переход как целевое действие
+    document.addEventListener('DOMContentLoaded', function() {
+      const telegramBtn = document.getElementById('confirmTelegramBtn');
+      const whatsappBtn = document.getElementById('confirmWhatsAppBtn');
+      
+      if (telegramBtn) {
+        telegramBtn.addEventListener('click', function() {
+          if (typeof ym !== 'undefined') {
+            ym(106117894, 'reachGoal', 'TELEGRAM_QUALITY_LEAD');
+          }
+        });
+      }
+      
+      if (whatsappBtn) {
+        whatsappBtn.addEventListener('click', function() {
+          if (typeof ym !== 'undefined') {
+            ym(106117894, 'reachGoal', 'WHATSAPP_QUALITY_LEAD');
+          }
+        });
+      }
+    });
+
+    // WhatsApp Modal functions
     function openWhatsAppModal() {
       document.getElementById('whatsappModal').style.display = 'flex';
       document.body.style.overflow = 'hidden';
@@ -235,8 +317,13 @@
     // Close modal when clicking outside
     document.addEventListener('click', function(event) {
       const whatsappModal = document.getElementById('whatsappModal');
+      const confirmationModal = document.getElementById('messengerConfirmationModal');
+      
       if (event.target === whatsappModal) {
         closeWhatsAppModal();
+      }
+      if (event.target === confirmationModal) {
+        closeMessengerConfirmation();
       }
     });
   </script>
