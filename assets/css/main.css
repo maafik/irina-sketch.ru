@@ -240,8 +240,6 @@ body {
   grid-template-columns: 1fr;
   gap: 12px;
   margin-bottom: 18px;
-  justify-items: center;
-  text-align: center;
 }
 
 .order-modal__btn {
@@ -260,7 +258,6 @@ body {
   transition: transform 0.2s ease, box-shadow 0.25s ease, filter 0.25s ease;
   width: 100%;
   color: #0b0b0f;
-  text-align: center;
 }
 
 .order-modal__btn:hover {
